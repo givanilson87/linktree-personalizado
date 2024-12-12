@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(135deg, #1c1c1c, #121212); /* Gradiente suave */
     color: #FFFAFA;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -33,6 +33,7 @@ h1 {
     width: 300px;
     max-width: 70%;
     animation: fadeIn 1s ease-in-out; /* Adicionado */
+    margin-top: 20px;
 }
 
 .footer {
