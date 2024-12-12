@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1c1c1c, #121212); /* Gradiente suave */
+    color: #FFFAFA;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #FFFAFA;
+}
+
+.sub-title {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: #FFFAFA;
+}
+
+
+.container {
+    background-color: #363636;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    max-width: 70%;
+    animation: fadeIn 1s ease-in-out; /* Adicionado */
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    color: #32CD32;
+    font-size: 0.8rem;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid;
+    border-image-slice: 1;
+}
+
+
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+    text-decoration: none;
+    background-color: #1C1C1C;
+    transition: all 0.3s ease; /* Transição suave */
+
+    p {
+        color: #FFFAFA;
+    }
+}
+
+.link:hover {
+    background-color: #333; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Leve zoom */
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .link {
+        flex-direction: column; /* Ícones e texto empilhados */
+        padding: 10px;
+    }
+
+    .link img {
+        margin-bottom: 5px;
+    }
+}
+
+
